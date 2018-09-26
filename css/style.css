@@ -1,0 +1,28 @@
+body {
+    margin: 40px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: saddlebrown;
+    padding 0 10px;
+    background-color: bisque
+}
+
+h1 {
+    color: darkgoldenrod;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+a {
+    color: darkred
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2
+}
