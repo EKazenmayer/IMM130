@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Crash Course | Lesson 2: Conditional Statements</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <h1>Java Crash Course</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lessons.html">Lessons</a>
+                <ul>
+                    <li><a href="lesson1.html">Lesson 1: Variables</a></li>
+                    <li><a href="lesson2.html">Lesson 2: Conditional Statements</a></li>
+                    <li><a href="lesson3.html">Lesson 3: Arrays</a></li>
+                    <li><a href="lesson4.html">Lesson 4: Loops</a></li>
+                </ul>
+            </li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="https://validator.w3.org/check?uri=referer">Validator</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>How It Works</h1>
+        <pre>
+        public class JavaCrashCourse {
+            public static void main(String[] args) {
+                Barista barista = new Barista();
+                barista.setName("yourName");
+                barista.setAge(yourAge);
+                barista.printWelcomeMessage();
+                
+                boolean drinksCoffee = yourAnswer;
+                int packetsOfSugar = yourNum;
+                makeDrink(drinksCoffee, packetsOfSugar);
+            }
+            
+            public static void makeDrink(boolean isCoffee, int numPackets) {
+                String typeOfDrink;
+                if (isCoffee = true) {
+                    typeOfDrink = "coffee";
+                }
+                else {
+                    typeOfDrink = "tea";
+                }
+                System.out.print("Barista Ada made you a special drink! ");
+                System.out.println("She made you a " + typeOfDrink + " with " + numPackets + " of sugar.");
+                
+                if (numPackets == 0) {
+                    System.out.println("It's really bitter!");
+                }
+                else if (numPackets == 1 || numPackets == 2) {
+                    System.out.println("Just right!");
+                }
+                else if (numPackets >= 3) {
+                    System.out.println("How sweet!");
+                }
+            }
+        }
+        </pre>
+        <button><a href="lesson3.html">Next Lesson!</a></button>
+    </main>
+</body>
+
+</html>

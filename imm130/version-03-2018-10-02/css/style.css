@@ -1,0 +1,112 @@
+h1 {
+    text-align: center;
+    background-color: #28180e;
+    font-size: 80px;
+    padding: 0;
+    font-family: bebas Neue, italic;
+    color: #dc2a26;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    background-color: #28180e;
+    list-style-type: none;
+    width: 100%;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    padding: 10px;
+    color: #8c4a2b;
+    font-size: 30px;
+    font-family: bebas Neue, italic;
+}
+
+nav ul li ul {
+    display: none;
+}
+
+/*
+nav ul li ul.dropdown {
+    min-width: 100%;
+    background: #f2f2f2;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+
+nav ul li:hover ul.dropdown {
+    display: block;
+}
+
+nav ul li ul.dropdown li {
+    display: block;
+}
+
+nav @media screen and (max-width: 500px) {
+    li {
+        display: block;
+        border-bottom: 1px black solid;
+    }
+
+    li:last-child {
+        border-bottom: none;
+    }
+}
+*/
+
+nav li a:hover {
+    color: #fdd7bb;
+}
+
+
+body {
+    margin: 40px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #28180e;
+    padding 0 10px;
+    background-color: #fdd7bb;
+    font-family: Century Gothic, sans-serif;
+}
+
+main h1 {
+    background-color: #fdd7bb;
+    color: #dc2a26;
+    font-size: 50px;
+    padding: 0;
+    font-family: bebas Neue, italic;
+}
+
+main a {
+    color: #8c4a2b;
+    font-size: 25px;
+    font-family: bebas Neue, italic;
+}
+
+button a {
+    color: #dc2a26;
+    font-size: 25px;
+    font-family: bebas Neue, italic;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2
+}
+
+pre {
+    color: #8c4a2b;
+}
