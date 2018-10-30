@@ -9,11 +9,16 @@
 </head>
 
 <body>
-    <h1>Java Crash Course</h1>
+    <header>Java Crash Course</header>
+    <div class="nav_mobile">
+        <figure></figure>
+        <figure></figure>
+        <figure></figure>
+    </div>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="lessons.html">Lessons</a>
+            <li class="lessonsmenu"><a href="lessons.html">Lessons</a>
                 <ul>
                     <li><a href="lesson1.html">Lesson 1: Variables</a></li>
                     <li><a href="lesson2.html">Lesson 2: Conditional Statements</a></li>
@@ -28,14 +33,16 @@
     </nav>
     <main>
         <h1>What's On the Menu</h1>
-        <a href="lesson1.html">Lesson 1: Variables</a>
-        <p>Like any good coffee shop, some things stay constant while others are - you guessed it - variable. Java code can handle such things, and this lesson will show you how.</p>
-        <a href="lesson2.html">Lesson 2: Conditional Statements</a>
-        <p>If you like coding, then you are awesome. Makes sense, right? This is called a conditional statement, and this lesson will show you how it can be used in code.</p>
-        <a href="lesson3.html">Lesson 3: Arrays</a>
-        <p>Just like a barista making a list of orders, you can put a collection of like things into an array. You can even make arrays of arrays of arrays! (but we'll start small lol)</p>
-        <a href="lesson4.html">Lesson 4: Loops</a>
-        <p>When things get repetitive at the cafe, why not automate the process? Loops help you get more done faster so you don't have to go on a caffeine craze for your coding project... :)</p>
+        <dl>
+            <dt><a href="lesson1.html">Lesson 1: Variables</a></dt>
+            <dd>Like any good coffee shop, some things stay constant while others are - you guessed it - variable. Java code can handle such things, and this lesson will show you how.</dd>
+            <dt><a href="lesson2.html">Lesson 2: Conditional Statements</a></dt>
+            <dd>If you like coding, then you are awesome. Makes sense, right? This is called a conditional statement, and this lesson will show you how it can be used in code.</dd>
+            <dt><a href="lesson3.html">Lesson 3: Arrays</a></dt>
+            <dd>Just like a barista making a list of orders, you can put a collection of like things into an array. You can even make arrays of arrays of arrays! (but we'll start small lol)</dd>
+            <dt><a href="lesson4.html">Lesson 4: Loops</a></dt>
+            <dd>When things get repetitive at the cafe, why not automate the process? Loops help you get more done faster so you don't have to go on a caffeine craze for your coding project... :)</dd>
+        </dl>
         <button><a href="lesson1.html">Start Lesson 1</a></button>
     </main>
 </body>
