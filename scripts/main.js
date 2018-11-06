@@ -1,0 +1,14 @@
+document.getElementById("lesson1Button").onclick = "lesson1a.html";
+document.getElementById("lesson1aButton").onclick = "lesson1b.html";
+document.getElementById("lesson1bButton").onclick = "lesson2.html";
+document.getElementById("lesson2Button").onclick = "lesson2a.html";
+document.getElementById("lesson2aButton").onclick = "lesson2b.html";
+document.getElementById("lesson2bButton").onclick = "lesson3.html";
+document.getElementById("lesson3Button").onclick = "lesson3a.html";
+document.getElementById("lesson3aButton").onclick = "lesson3b.html";
+document.getElementById("lesson3bButton").onclick = "lesson4.html";
+document.getElementById("lesson4Button").onclick = "lesson4a.html";
+document.getElementById("lesson4aButton").onclick = "lesson4b.html";
+document.getElementById("lesson4bButton").onclick = "finale.html";
+document.getElementById("finaleButton").onclick = "references.html";
+document.getElementById("contactButton").onclick = "index.html";
