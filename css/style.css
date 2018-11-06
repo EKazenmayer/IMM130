@@ -1,15 +1,29 @@
 @font-face {
     font-family: "Bebas Neue";
-    src: url("fonts/bebasneue_regular-webfont.woff2") format('woff2');
+    src: url("../fonts/bebasneue_regular-webfont.woff2") format('woff2');
+}
+
+body {
+    background-color: #fdd7bb;
+    margin: 0;
+    width: 100%;
+    line-height: 1.6;
+    text-align: center;
 }
 
 /*header*/
 header {
     background-color: #28180e;
     padding: 0;
-    width: 90%;
+    margin: 0;
+    width: 100%;
     display: inline-block;
     float: left;
+}
+
+header h1 {
+    padding: 0;
+    margin: 0;
     color: #dc2a26;
     font-size: 40px;
     font-family: "Bebas Neue", sans-serif;
@@ -17,34 +31,33 @@ header {
 }
 
 @media screen and (min-width: 480px) {
-    header {
-        width: 90%;
+    header h1 {
         font-size: 40px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    header {
-        width: 100%;
+    header h1 {
         font-size: 60px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    header {
-        width: 100%;
+    header h1 {
         font-size: 80px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    header {
+    header h1 {
         width: 100%;
         font-size: 100px;
     }
 }
 
-/*hamburger menu*/
+/*
+
+hamburger menu
 .nav_mobile {
     background-color: #28180e;
     padding-top: 10px;
@@ -85,46 +98,31 @@ header {
     background-color: #8c4a2b;
     margin: 6px 0;
 }
+*/
 
 nav ul {
     background-color: #28180e;
     padding: 0;
     margin: 0;
     width: 100%;
-    display: none;
+    display: block;
     list-style-type: none;
-}
-
-@media screen and (min-width: 480px) {
-    nav ul {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    nav ul {
-        display: block;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    nav ul {
-        font-size: 30px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    nav ul {
-        font-size: 30px;
-    }
+    font-size: 20px;
 }
 
 nav li {
     display: inline-block;
 }
 
-nav li a:link {
+.lessons-menu ul li {
+    background-color: #8c4a2b;
+    display: block;
+}
+
+nav li a:link,
+.lessons-menu ul li a:link {
     padding: 10px;
+    padding-top: 0;
     display: block;
     color: #8c4a2b;
     font-size: 25px;
@@ -132,62 +130,69 @@ nav li a:link {
 }
 
 @media screen and (min-width: 480px) {
-    nav li a:link {
+
+    nav li a:link,
+    .lessons-menu ul li a:link {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+
+    nav li a:link,
+    .lessons-menu ul li a:link {
         font-size: 30px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    nav li a:link {
+
+    nav li a:link,
+    .lessons-menu ul li a:link {
         font-size: 35px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    nav li a:link {
+
+    nav li a:link,
+    .lessons-menu ul li a:link {
         font-size: 40px;
     }
 }
 
-nav li a:active {
+.lessons-menu ul li a:link {
+    color: #28180e;
+    text-align: left;
+}
+
+nav li a:active,
+.lessons-menu ul li a:active {
     color: #dc2a26;
 }
 
-nav ul li ul {
-    display: none;
-}
-
-/*
-nav ul li ul.dropdown {
-    min-width: 100%;
-    background: #f2f2f2;
+.lessons-menu ul {
     display: none;
     position: absolute;
-    z-index: 999;
-    left: 0;
+    background-color: #28180e;
+    min-width: 160px;
+    z-index: 1;
 }
 
-nav ul li:hover ul.dropdown {
+.lessons-menu:hover ul {
     display: block;
 }
 
-nav ul li ul.dropdown li {
-    display: block;
+nav li a:visited {
+    color: #8c4a2b;
 }
 
-nav @media screen and (max-width: 500px) {
-    li {
-        display: block;
-        border-bottom: 1px black solid;
-    }
-
-    li:last-child {
-        border-bottom: none;
-    }
+.lessons-menu ul li a:visited {
+    color: #28180e;
 }
-*/
 
-nav li a:hover {
+nav li a:hover,
+.lessons-menu ul li a:hover {
     color: #fdd7bb;
 }
 
@@ -196,46 +201,10 @@ main {
     margin: 0 auto;
 }
 
-
-body {
+main h1 {
     background-color: #fdd7bb;
-    padding 0 10px;
-    margin: 40px auto;
-    width: 100%;
-    line-height: 1.6;
-    color: #28180e;
-    font-size: 16px;
-    font-family: Century Gothic, sans-serif;
-    text-align: center;
-}
-
-@media screen and (min-width: 480px) {
-    body {
-        font-size: 16px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    body {
-        font-size: 17px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    body {
-        font-size: 18px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    body {
-        font-size: 19px;
-    }
-}
-
-h1 {
-    background-color: #fdd7bb;
-    padding: 0;
+    padding-top: 150px;
+    margin-bottom: 0;
     color: #dc2a26;
     line-height: 1.2;
     font-size: 30px;
@@ -243,105 +212,187 @@ h1 {
 }
 
 @media screen and (min-width: 480px) {
-    h1 {
+    main h1 {
+        padding-top: 150px;
+        margin-bottom: 0;
         font-size: 30px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    h1 {
+    main h1 {
+        padding-top: 180px;
+        margin-bottom: 0;
         font-size: 40px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    h1 {
+    main h1 {
+        padding-top: 220px;
+        margin-bottom: 0;
         font-size: 50px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    h1 {
+    main h1 {
+        padding-top: 260px;
+        margin-bottom: 0;
         font-size: 60px;
     }
 }
 
-a {
+main a {
     color: #8c4a2b;
     font-size: 25px;
     font-family: "Bebas Neue", sans-serif;
 }
 
 @media screen and (min-width: 992px) {
-    a {
+    main a {
         font-size: 25px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    a {
+    main a {
         font-size: 30px;
     }
 }
 
-button a {
+button {
+    background-color: fdd7bb;
     color: #dc2a26;
     font-size: 21px;
     font-family: "Bebas Neue", sans-serif;
 }
 
 @media screen and (min-width: 480px) {
-    button a {
+    button {
         font-size: 21px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    button a {
+    button {
         font-size: 23px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    button a {
+    button {
         font-size: 25px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    button a {
+    button {
         font-size: 27px;
     }
 }
 
-pre {
-    border: none;
-    border-style: none;
-    color: #8c4a2b;
-    text-align: left;
+button:visited {
+    color: #dc2a26;
+}
+
+p {
+    margin-top: 0;
+    width: 100%;
+    color: #28180e;
     font-size: 16px;
+    font-family: Century Gothic, sans-serif;
+    text-align: center;
 }
 
 @media screen and (min-width: 480px) {
-    pre {
+    p {
         font-size: 16px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    pre {
+    p {
         font-size: 17px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    pre {
+    p {
         font-size: 18px;
     }
 }
 
 @media screen and (min-width: 1200px) {
+    p {
+        font-size: 19px;
+    }
+}
+
+pre {
+    display: block;
+    overflow-x: auto;
+    color: #8c4a2b;
+    text-align: left;
+    font-size: 15px;
+    white-space: pre-wrap;
+}
+
+@media screen and (min-width: 480px) {
     pre {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    pre {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    pre {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    pre {
+        font-size: 18px;
+    }
+}
+
+pre.prettyprint {
+    border: none;
+}
+
+main li {
+    width: 100%;
+    color: #28180e;
+    font-size: 16px;
+    font-family: Century Gothic, sans-serif;
+}
+
+@media screen and (min-width: 480px) {
+    main li {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main li {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main li {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main li {
         font-size: 19px;
     }
 }
