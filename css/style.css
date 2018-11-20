@@ -3,11 +3,37 @@
     src: url("../fonts/bebasneue_regular-webfont.woff2") format('woff2');
 }
 
+img {
+    max-width: 25%;
+}
+
+@media screen and (min-width: 480px) {
+    img {
+        max-width: 25%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    img {
+        max-width: 20%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    img {
+        max-width: 15%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    img {
+        max-width: 10%;
+    }
+}
+
 .logo {
     margin-top: 15px;
-    width: 40%;
-    background-color: #dc2a26;
-    fill: #dc2a26;
+    max-width: 40%;
 }
 
 @media screen and (min-width: 480px) {
@@ -40,6 +66,75 @@ body {
     width: 100%;
     line-height: 1.6;
     text-align: center;
+}
+
+input,
+textarea {
+    color: #dc2a26;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+@media screen and (min-width: 480px) {
+
+    input,
+    textarea {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    input,
+    textarea {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    input,
+    textarea {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    input,
+    textarea {
+        font-size: 18px;
+    }
+}
+
+select {
+    color: #dc2a26;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+@media screen and (min-width: 480px) {
+    select {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    select {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    select {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    select {
+        font-size: 18px;
+    }
 }
 
 header {
@@ -305,7 +400,8 @@ main a {
     }
 }
 
-button {
+button,
+.button-class {
     background-color: fdd7bb;
     color: #dc2a26;
     font-size: 21px;
@@ -313,34 +409,45 @@ button {
 }
 
 @media screen and (min-width: 480px) {
-    button {
+
+    button,
+    .button-class {
         font-size: 21px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    button {
+
+    button,
+    .button-class {
         font-size: 23px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    button {
+
+    button,
+    .button-class {
         font-size: 25px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    button {
+
+    button,
+    .button-class {
         font-size: 27px;
     }
 }
 
-button:visited {
+button:visited,
+,
+.button-class:visited {
     color: #dc2a26;
 }
 
-p {
+p,
+label {
     margin-top: 0;
     width: 100%;
     color: #28180e;
@@ -350,27 +457,39 @@ p {
 }
 
 @media screen and (min-width: 480px) {
-    p {
+
+    p,
+    label {
         font-size: 16px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    p {
+
+    p,
+    label {
         font-size: 17px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    p {
+
+    p,
+    label {
         font-size: 18px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    p {
+
+    p,
+    label {
         font-size: 19px;
     }
+}
+
+label {
+    display: block;
 }
 
 pre {
@@ -438,5 +557,66 @@ main li {
 @media screen and (min-width: 1200px) {
     main li {
         font-size: 19px;
+    }
+}
+
+#lesson3img {
+    padding-left: 10%;
+    max-width: 30%;
+}
+
+@media screen and (min-width: 480px) {
+    #lesson3img {
+        padding-left: 10%;
+        max-width: 30%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #lesson3img {
+        padding-left: 10%;
+        max-width: 25%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #lesson3img {
+        padding-left: 5%;
+        max-width: 20%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #lesson3img {
+        padding-left: 5%;
+        max-width: 15%;
+    }
+}
+
+#lesson4img {
+    max-width: 70%;
+}
+
+@media screen and (min-width: 480px) {
+    #lesson4img {
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #lesson4img {
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #lesson4img {
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #lesson4img {
+        max-width: 40%;
     }
 }
