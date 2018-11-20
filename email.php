@@ -97,11 +97,29 @@ $headers = 'From: '.$email_from."\r\n".
 ?>
 
 
-
-<h1>Thank you for your message!</h1>
-<p>We will contact you as soon as possible.</p>
-
-
+<header>
+    <img class="logo" src="imgs/Logo.svg" alt="Java Crash Course">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="lessons-menu"><a href="lessons.html">Lessons</a>
+                <ul>
+                    <li><a href="lesson1.html">Lesson 1: Variables</a></li>
+                    <li><a href="lesson2.html">Lesson 2: Conditional Statements</a></li>
+                    <li><a href="lesson3.html">Lesson 3: Arrays</a></li>
+                    <li><a href="lesson4.html">Lesson 4: Loops</a></li>
+                </ul>
+            </li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>Thank you for your message!</h1>
+    <p>We will contact you as soon as possible.</p>
+    <button id="indexButton" onclick="window.location.href='index.html'">Return to homepage</button>
+</main>
 
 
 <?php
