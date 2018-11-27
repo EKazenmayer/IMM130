@@ -33,30 +33,34 @@ img {
 
 .logo {
     margin-top: 15px;
-    max-width: 40%;
+    min-width: 50%;
 }
 
 @media screen and (min-width: 480px) {
     .logo {
         margin-top: 15px;
+        min-width: 40%;
     }
 }
 
 @media screen and (min-width: 768px) {
     .logo {
         margin-top: 20px;
+        min-width: 35%;
     }
 }
 
 @media screen and (min-width: 992px) {
     .logo {
         margin-top: 25px;
+        min-width: 30%;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .logo {
         margin-top: 30px;
+        min-width: 30%;
     }
 }
 
@@ -209,6 +213,7 @@ nav li a:link,
     color: #8c4a2b;
     font-size: 25px;
     font-family: "Bebas Neue", sans-serif;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 480px) {
