@@ -5,7 +5,6 @@
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Crash Course | Lesson 1: Variables</title>
-    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -15,9 +14,9 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="lessons-menu"><a href="lessons.html">Lessons</a>
+                <li class="lessons-menu"><a href="lessons.html" style="color: #dc2a26">Lessons</a>
                     <ul>
-                        <li><a href="lesson1.html">Lesson 1: Variables</a></li>
+                        <li><a href="lesson1.html" style="color: #fdd7bb">Lesson 1: Variables</a></li>
                         <li><a href="lesson2.html">Lesson 2: Conditional Statements</a></li>
                         <li><a href="lesson3.html">Lesson 3: Arrays</a></li>
                         <li><a href="lesson4.html">Lesson 4: Loops</a></li>
@@ -29,22 +28,25 @@
         </nav>
     </header>
     <main>
-        <h1>Lesson 1: Variables</h1>
+        <div class="heading">
+            <div></div>
+            <div class="lesson-heading">
+                <h1>Lesson 1: Variables</h1>
+            </div>
+            <div class="lesson-marker">
+                <h2>1</h2>
+            </div>
+        </div>
         <p>First things first - what is your name and age?</p>
         <pre class="prettyprint lang-java">
-public class JavaCrashCourse {
-    public static void main(String[] args) {
-        Barista barista = new Barista();
-        barista.setName("<input type="text" id="yourName" placeholder="Your Name">");
-        barista.setAge(<input type="number" id="yourAge" placeholder="e.g., 16">);
-        barista.printWelcomeMessage();
-    }
-}
+String name = "<input type="text" id="name" placeholder="Your Name">";
+int age = <input type="number" min="0" max="2147483647" id="age" placeholder="e.g., 16">;
         </pre>
-        <button id="lesson1Button" onclick="window.location.href='lesson1a.html'">Go!</button>
+        <button id="lesson1Button" onclick="submitLesson1()">Go!</button>
     </main>
 </body>
 
 <script src="scripts/main.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
 </html>

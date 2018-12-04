@@ -66,7 +66,7 @@ img {
 
 body {
     background-color: #fdd7bb;
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
     line-height: 1.6;
     text-align: center;
@@ -83,7 +83,7 @@ textarea {
 
     input,
     textarea {
-        font-size: 15px;
+        ] font-size: 15px;
     }
 }
 
@@ -146,46 +146,9 @@ header {
     padding: 0;
     margin: 0;
     width: 100%;
-    display: inline-block;
-    float: left;
-}
-
-header h1 {
-    padding: 0;
-    margin: 0;
-    color: #dc2a26;
-    font-size: 40px;
-    font-family: "Bebas Neue", sans-serif;
-    text-align: center;
-}
-
-@media screen and (min-width: 480px) {
-    header h1 {
-        font-size: 40px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    header h1 {
-        font-size: 60px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    header h1 {
-        font-size: 80px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    header h1 {
-        width: 100%;
-        font-size: 100px;
-    }
 }
 
 nav ul {
-    background-color: #28180e;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -310,7 +273,10 @@ nav li a:visited {
     color: #28180e;
 }
 
-nav li a:hover,
+nav li a:hover {
+    color: #dc2a26;
+}
+
 .lessons-menu ul li a:hover {
     color: #fdd7bb;
 }
@@ -345,9 +311,21 @@ main {
     }
 }
 
+.heading {
+    display: grid;
+}
+
+.lesson-heading {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.lesson-marker {
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+
 main h1 {
-    background-color: #fdd7bb;
-    padding-top: 150px;
     margin-bottom: 0;
     color: #dc2a26;
     line-height: 1.2;
@@ -357,33 +335,64 @@ main h1 {
 
 @media screen and (min-width: 480px) {
     main h1 {
-        padding-top: 150px;
-        margin-bottom: 0;
         font-size: 30px;
     }
 }
 
 @media screen and (min-width: 768px) {
     main h1 {
-        padding-top: 180px;
-        margin-bottom: 0;
         font-size: 40px;
     }
 }
 
 @media screen and (min-width: 992px) {
     main h1 {
-        padding-top: 220px;
-        margin-bottom: 0;
         font-size: 50px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     main h1 {
-        padding-top: 260px;
-        margin-bottom: 0;
         font-size: 60px;
+    }
+}
+
+main h2 {
+    background-color: #28180e;
+    border-radius: 50%;
+    width: 20px;
+    float: right;
+    color: #8c4a2b;
+    line-height: 1.2;
+    font-size: 15px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+@media screen and (min-width: 480px) {
+    main h2 {
+        width: 20px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main h2 {
+        width: 30px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main h2 {
+        width: 40px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main h2 {
+        width: 50px;
+        font-size: 30px;
     }
 }
 
@@ -407,9 +416,10 @@ main a {
 
 button,
 .button-class {
-    background-color: fdd7bb;
-    color: #dc2a26;
-    font-size: 21px;
+    background: transparent;
+    border: solid #dc2a26;
+    color: #28180e;
+    font-size: 25px;
     font-family: "Bebas Neue", sans-serif;
 }
 
@@ -417,7 +427,7 @@ button,
 
     button,
     .button-class {
-        font-size: 21px;
+        font-size: 25px;
     }
 }
 
@@ -425,7 +435,7 @@ button,
 
     button,
     .button-class {
-        font-size: 23px;
+        font-size: 30px;
     }
 }
 
@@ -433,7 +443,7 @@ button,
 
     button,
     .button-class {
-        font-size: 25px;
+        font-size: 30px;
     }
 }
 
@@ -441,18 +451,24 @@ button,
 
     button,
     .button-class {
-        font-size: 27px;
+        font-size: 35px;
     }
 }
 
+button:hover,
+.button-class:hover {
+    color: #dc2a26;
+    cursor: pointer;
+}
+
 button:visited,
-,
 .button-class:visited {
     color: #dc2a26;
 }
 
 p,
-label {
+label,
+dd {
     margin-top: 0;
     width: 100%;
     color: #28180e;
@@ -464,7 +480,8 @@ label {
 @media screen and (min-width: 480px) {
 
     p,
-    label {
+    label,
+    dd {
         font-size: 16px;
     }
 }
@@ -472,7 +489,8 @@ label {
 @media screen and (min-width: 768px) {
 
     p,
-    label {
+    label,
+    dd {
         font-size: 17px;
     }
 }
@@ -480,7 +498,8 @@ label {
 @media screen and (min-width: 992px) {
 
     p,
-    label {
+    label,
+    dd {
         font-size: 18px;
     }
 }
@@ -488,7 +507,8 @@ label {
 @media screen and (min-width: 1200px) {
 
     p,
-    label {
+    label,
+    dd {
         font-size: 19px;
     }
 }
@@ -539,6 +559,7 @@ main li {
     color: #28180e;
     font-size: 16px;
     font-family: Century Gothic, sans-serif;
+    list-style-type: none;
 }
 
 @media screen and (min-width: 480px) {

@@ -5,20 +5,19 @@
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Crash Course | Lesson 2: Conditional Statements</title>
-    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<body>
+<body onload="loadLesson2b()">
     <header>
         <img class="logo" src="imgs/Logo.svg" alt="Java Crash Course">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="lessons-menu"><a href="lessons.html">Lessons</a>
+                <li class="lessons-menu"><a href="lessons.html" style="color: #dc2a26">Lessons</a>
                     <ul>
                         <li><a href="lesson1.html">Lesson 1: Variables</a></li>
-                        <li><a href="lesson2.html">Lesson 2: Conditional Statements</a></li>
+                        <li><a href="lesson2.html" style="color: #fdd7bb">Lesson 2: Conditional Statements</a></li>
                         <li><a href="lesson3.html">Lesson 3: Arrays</a></li>
                         <li><a href="lesson4.html">Lesson 4: Loops</a></li>
                     </ul>
@@ -29,36 +28,35 @@
         </nav>
     </header>
     <main>
-        <h1>How It Works</h1>
+        <div class="heading">
+            <div class="lesson-heading">
+                <h1>How It Works</h1>
+            </div>
+            <div class="lesson-marker">
+                <h2>2</h2>
+            </div>
+        </div>
         <pre class="prettyprint lang-java" id="lesson2code">
-public class JavaCrashCourse {
-    public static void main(String[] args) {
-        boolean drinksCoffee = yourAnswer;
-        int packetsOfSugar = yourNum;
-        makeDrink(drinksCoffee, packetsOfSugar);
-    }
+boolean drinksCoffee = true;
+int numPackets = 2;
+String typeOfDrink;
+if (drinksCoffee == true) {
+    typeOfDrink = "coffee";
+}
+else {
+    typeOfDrink = "tea";
+}
+System.out.print("Barista Ada made you a special drink! ");
+System.out.println("She made you " + typeOfDrink + " with " + numPackets + " packets of sugar.");
 
-    public static void makeDrink(boolean isCoffee, int numPackets) {
-        String typeOfDrink;
-        if (isCoffee == true) {
-            typeOfDrink = "coffee";
-        }
-        else {
-            typeOfDrink = "tea";
-        }
-        System.out.print("Barista Ada made you a special drink! ");
-        System.out.println("She made you a " + typeOfDrink + " with " + numPackets + " of sugar.");
-
-        if (numPackets == 0) {
-            System.out.println("It's really bitter!");
-        }
-        else if (numPackets == 1 || numPackets == 2) {
-            System.out.println("Just right!");
-        }
-        else if (numPackets >= 3) {
-            System.out.println("How sweet!");
-        }
-    }
+if (numPackets == 0) {
+    System.out.println("It's really bitter!");
+}
+else if (numPackets == 1 || numPackets == 2) {
+    System.out.println("Just right!");
+}
+else if (numPackets >= 3) {
+    System.out.println("How sweet!");
 }
         </pre>
         <button id="lesson2bButton" onclick="window.location.href='lesson3.html'">Next Lesson!</button>
@@ -66,5 +64,6 @@ public class JavaCrashCourse {
 </body>
 
 <script src="scripts/main.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
 </html>

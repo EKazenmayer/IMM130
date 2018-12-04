@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<body>
+<body onload="loadLesson1a()">
     <header>
         <img class="logo" src="imgs/Logo.svg" alt="Java Crash Course">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="lessons-menu"><a href="lessons.html">Lessons</a>
+                <li class="lessons-menu"><a href="lessons.html" style="color: #dc2a26">Lessons</a>
                     <ul>
-                        <li><a href="lesson1.html">Lesson 1: Variables</a></li>
+                        <li><a href="lesson1.html" style="color: #fdd7bb">Lesson 1: Variables</a></li>
                         <li><a href="lesson2.html">Lesson 2: Conditional Statements</a></li>
                         <li><a href="lesson3.html">Lesson 3: Arrays</a></li>
                         <li><a href="lesson4.html">Lesson 4: Loops</a></li>
@@ -28,9 +28,17 @@
         </nav>
     </header>
     <main>
-        <h1 id="lesson1a0">Welcome to the Cafe, Your Name</h1>
-        <img src="imgs/lesson1.png" alt="Barista waves hello">
-        <p id="lesson1a1">You're 16? Cool beans! In fact, if today was your birthday, the cafe would give you "yourAge" coffee beans - one for each year!</p>
+        <div class="heading">
+            <div></div>
+            <div class="lesson-heading">
+                <h1 id="lesson1a0">Welcome to the Cafe, Your Name</h1>
+            </div>
+            <div class="lesson-marker">
+                <h2>1</h2>
+            </div>
+        </div>
+        <img src="imgs/lesson1.svg" alt="Barista waves hello">
+        <p id="lesson1a1">You're 16? Cool beans! In fact, if today was your birthday, the cafe would give you 16 coffee beans - one for each year!</p>
         <button id="lesson1aButton" onclick="window.location.href='lesson1b.html'">See how the code works!</button>
     </main>
 </body>

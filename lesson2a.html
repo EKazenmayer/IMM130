@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<body>
+<body onload="loadLesson2a()">
     <header>
         <img class="logo" src="imgs/Logo.svg" alt="Java Crash Course">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="lessons-menu"><a href="lessons.html">Lessons</a>
+                <li class="lessons-menu"><a href="lessons.html" style="color: #dc2a26">Lessons</a>
                     <ul>
                         <li><a href="lesson1.html">Lesson 1: Variables</a></li>
-                        <li><a href="lesson2.html">Lesson 2: Conditional Statements</a></li>
+                        <li><a href="lesson2.html" style="color: #fdd7bb">Lesson 2: Conditional Statements</a></li>
                         <li><a href="lesson3.html">Lesson 3: Arrays</a></li>
                         <li><a href="lesson4.html">Lesson 4: Loops</a></li>
                     </ul>
@@ -28,9 +28,17 @@
         </nav>
     </header>
     <main>
-        <h1>Barista Ada made you a special drink!</h1>
-        <img src="imgs/lesson2.png" alt="Steaming hot mug">
-        <p id="lesson2a">She made you a "typeOfDrink" with "numPackets" of sugar. <br>"customMessage"</p>
+        <div class="heading">
+            <div></div>
+            <div class="lesson-heading">
+                <h1>Barista Ada made you a special drink!</h1>
+            </div>
+            <div class="lesson-marker">
+                <h2>2</h2>
+            </div>
+        </div>
+        <img src="imgs/lesson2.svg" alt="Steaming hot mug">
+        <p id="lesson2a">She made you coffee with 2 packets of sugar. <br>Just right!</p>
         <button id="lesson2aButton" onclick="window.location.href='lesson2b.html'">See how the code works!</button>
     </main>
 </body>

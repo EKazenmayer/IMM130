@@ -5,7 +5,6 @@
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Crash Course | Lesson 3: Arrays</title>
-    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -15,11 +14,11 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="lessons-menu"><a href="lessons.html">Lessons</a>
+                <li class="lessons-menu"><a href="lessons.html" style="color: #dc2a26">Lessons</a>
                     <ul>
                         <li><a href="lesson1.html">Lesson 1: Variables</a></li>
                         <li><a href="lesson2.html">Lesson 2: Conditional Statements</a></li>
-                        <li><a href="lesson3.html">Lesson 3: Arrays</a></li>
+                        <li><a href="lesson3.html" style="color: #fdd7bb">Lesson 3: Arrays</a></li>
                         <li><a href="lesson4.html">Lesson 4: Loops</a></li>
                     </ul>
                 </li>
@@ -29,21 +28,30 @@
         </nav>
     </header>
     <main>
-        <h1>Lesson 3: Arrays</h1>
+        <div class="heading">
+            <div></div>
+            <div class="lesson-heading">
+                <h1>Lesson 3: Arrays</h1>
+            </div>
+            <div class="lesson-marker">
+                <h2>3</h2>
+            </div>
+        </div>
         <p>Wow! A huge group of five of your dream customers just walked into the cafe! Who are they?</p>
         <pre class="prettyprint lang-java">
 String[] customers = {
-    "<input id="customer0" type="input">",
-    "<input id="customer1" type="input">",
-    "<input id="customer2" type="input">",
-    "<input id="customer3" type="input">",
-    "<input id="customer4" type="input">"
+    "<input type="text" id="customer0" placeholder="e.g., Grace Hopper">",
+    "<input type="text" id="customer1" placeholder="Alan Turing">",
+    "<input type="text" id="customer2" placeholder="Steve Wozniak">",
+    "<input type="text" id="customer3" placeholder="Anita Borg">",
+    "<input type="text" id="customer4" placeholder="Jessica Matthews">"
 };
         </pre>
-        <button id="lesson3Button" onclick="window.location.href='lesson3a.html'">Go!</button>
+        <button id="lesson3Button" onclick="submitLesson3()">Go!</button>
     </main>
 </body>
 
 <script src="scripts/main.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
 </html>

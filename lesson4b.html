@@ -5,22 +5,21 @@
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Crash Course | Lesson 4: Loops</title>
-    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<body>
+<body onload="loadLesson4b()">
     <header>
         <img class="logo" src="imgs/Logo.svg" alt="Java Crash Course">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="lessons-menu"><a href="lessons.html">Lessons</a>
+                <li class="lessons-menu"><a href="lessons.html" style="color: #dc2a26">Lessons</a>
                     <ul>
                         <li><a href="lesson1.html">Lesson 1: Variables</a></li>
                         <li><a href="lesson2.html">Lesson 2: Conditional Statements</a></li>
                         <li><a href="lesson3.html">Lesson 3: Arrays</a></li>
-                        <li><a href="lesson4.html">Lesson 4: Loops</a></li>
+                        <li><a href="lesson4.html" style="color: #fdd7bb">Lesson 4: Loops</a></li>
                     </ul>
                 </li>
                 <li><a href="references.html">References</a></li>
@@ -29,14 +28,24 @@
         </nav>
     </header>
     <main>
-        <h1>How It Works</h1>
+        <div class="heading">
+            <div></div>
+            <div class="lesson-heading">
+                <h1>How It Works</h1>
+            </div>
+            <div class="lesson-marker">
+                <h2>4</h2>
+            </div>
+        </div>
         <pre class="prettyprint lang-java" id="lesson4code">
-int amountMoreCups = yourInput;
+int amountMoreCups = 3;
 int numberOfCustomers = customers.size();
 int numberOfCups = 2;
-for(int customer = 1; customer &lt; numberOfCustomers + 1; customer = customer + 1) {
-    System.out.println("Customer #" + customer + " ordered " + numberOfCups + " cups of coffee.");
+int customerServed = 1;
+while(customersServed &lt; numberOfCustomers + 1) {
+    System.out.println("Customer #" + customerServed + " ordered " + numberOfCups + " cups of coffee.");
     numberOfCups = numberOfCups + amountMoreCups;
+    customerServed = customerServed + 1;
 }
         </pre>
         <button id="lesson4bButton" onclick="window.location.href='finale.html'">Next</button>
@@ -44,5 +53,6 @@ for(int customer = 1; customer &lt; numberOfCustomers + 1; customer = customer +
 </body>
 
 <script src="scripts/main.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
 </html>

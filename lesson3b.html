@@ -5,21 +5,20 @@
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Crash Course | Lesson 3: Arrays</title>
-    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<body>
+<body onload="loadLesson3b()">
     <header>
         <img class="logo" src="imgs/Logo.svg" alt="Java Crash Course">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="lessons-menu"><a href="lessons.html">Lessons</a>
+                <li class="lessons-menu"><a href="lessons.html" style="color: #dc2a26">Lessons</a>
                     <ul>
                         <li><a href="lesson1.html">Lesson 1: Variables</a></li>
                         <li><a href="lesson2.html">Lesson 2: Conditional Statements</a></li>
-                        <li><a href="lesson3.html">Lesson 3: Arrays</a></li>
+                        <li><a href="lesson3.html" style="color: #fdd7bb">Lesson 3: Arrays</a></li>
                         <li><a href="lesson4.html">Lesson 4: Loops</a></li>
                     </ul>
                 </li>
@@ -29,16 +28,24 @@
         </nav>
     </header>
     <main>
-        <h1>How It Works</h1>
+        <div class="heading">
+            <div></div>
+            <div class="lesson-heading">
+                <h1>How It Works</h1>
+            </div>
+            <div class="lesson-marker">
+                <h2>3</h2>
+            </div>
+        </div>
         <pre class="prettyprint lang-java" id="lesson3code">
 String[] customers = {
-    "customer0",
-    "customer1",
-    "customer2",
-    "customer3",
-    "customer4"
+    "Grace Hopper",
+    "Alan Turing",
+    "Steve Wozniak",
+    "Anita Borg",
+    "Jessica Matthews"
 };
-System.out.println("Barista Grace has orders for you to fill!");
+System.out.println("Barista Bill has orders for you to fill!");
 System.out.println("First, please take an order for " + customers[0] + 
     ". Next, serve " + customers[1] + ", then get to " + customers[2] + 
     ", followed by " + customers[3] +
@@ -50,5 +57,6 @@ System.out.println("First, please take an order for " + customers[0] +
 </body>
 
 <script src="scripts/main.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
 </html>
