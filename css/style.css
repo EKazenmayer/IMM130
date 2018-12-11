@@ -83,7 +83,7 @@ textarea {
 
     input,
     textarea {
-        ] font-size: 15px;
+        font-size: 15px;
     }
 }
 
@@ -362,7 +362,7 @@ main h2 {
     border-radius: 50%;
     width: 20px;
     float: right;
-    color: #8c4a2b;
+    color: #dc2a26;
     line-height: 1.2;
     font-size: 15px;
     font-family: "Bebas Neue", sans-serif;
@@ -466,6 +466,66 @@ button:visited,
     color: #dc2a26;
 }
 
+dl {
+    display: grid;
+    width: 100%;
+    margin: 20px auto;
+}
+
+@media screen and (min-width: 768px) {
+    dl {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    dl {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    dl {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.lesson-menu-item {
+    margin: auto;
+}
+
+@media screen and (min-width: 480px) {
+
+    .lesson-menu-item {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .lesson-menu-item {
+        margin: 0px 30px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .lesson-menu-item {
+        margin: 0px 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .lesson-menu-item {
+        margin: 0px 30px;
+    }
+}
+
+dt {
+    text-align: center;
+}
+
 p,
 label,
 dd {
@@ -513,45 +573,108 @@ dd {
     }
 }
 
+dd {
+    margin: auto;
+}
+
 label {
     display: block;
 }
 
-pre {
-    display: block;
+pre,
+.code {
     overflow-x: auto;
     color: #8c4a2b;
     text-align: left;
     font-size: 15px;
+    font-family: monospace;
     white-space: pre-wrap;
 }
 
 @media screen and (min-width: 480px) {
-    pre {
+
+    pre,
+    .code {
         font-size: 15px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    pre {
+
+    pre,
+    .code {
         font-size: 16px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    pre {
+
+    pre,
+    .code {
         font-size: 17px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    pre {
+
+    pre,
+    .code {
         font-size: 18px;
     }
 }
 
-pre.prettyprint {
+.prettyprint {
     border: none;
+}
+
+span {
+    display: inline;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    top: 100%;
+    left: 25%;
+    background-color: #28180e;
+    color: #fdd7bb;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 480px) {
+    .tooltip-text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tooltip-text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .tooltip-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .tooltip-text {
+        font-size: 15px;
+    }
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
 }
 
 main li {

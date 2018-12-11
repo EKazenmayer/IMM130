@@ -10,7 +10,7 @@
 
 <body onload="loadLesson1b()">
     <header>
-        <img class="logo" src="imgs/Logo.svg" alt="Java Crash Course">
+        <a href="index.html"><img class="logo" src="imgs/Logo.svg" alt="Java Crash Course"></a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -37,18 +37,43 @@
                 <h2>1</h2>
             </div>
         </div>
-        <pre class="prettyprint lang-java" id="lesson1code">
-String name = "Your Name";
-int age = 16;
-System.out.println("Welcome to the Cafe, " + name + "!");
-System.out.print("You're " + age + "? Cool beans! ");
-System.out.println("In fact, if today was your birthday, we would give you " + age + " coffee beans - one for each year!");
+        <pre class="prettyprint lang-java">
+<div class="tooltip">String name = "<span class="prettyprint lang-java code" id="lesson1code0">Your Name</span>";<span class="tooltip-text">We first make a variable called name, and it can save words written in quotation marks</span></div>
+<div class="tooltip">int age = <span class="prettyprint lang-java code" id="lesson1code1">16</span>;<span class="tooltip-text">Another variable, which we will call age, can save integers</span></div>
+<div class="tooltip">System.out.println("Welcome to the Cafe, " + name + "!");<span class="tooltip-text">We print out the message written in the parentheses</span></div>
+<div class="tooltip">System.out.print("You're " + age + "? Cool beans! ");<span class="tooltip-text">Like algebra, a variable is equal to the value set to it</span></div>
+<div class="tooltip">System.out.println("In fact, if today was your birthday, we would give you " + age + " coffee beans - one for each year!");<span class="tooltip-text">println, unlike print, says to start a fresh line after writing its message, like resetting a typewriter</span></div>
         </pre>
         <button id="lesson1bButton" onclick="window.location.href='lesson2.html'">Next lesson!</button>
     </main>
-</body>
+    <script src="scripts/main.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <style>
+        .pln {
+            color: #28180e;
+        }
 
-<script src="scripts/main.js"></script>
-<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        .str,
+        .lit {
+            color: #8c4a2b
+        }
+
+        .typ,
+        .kwd {
+            color: #dc2a26;
+        }
+
+        .tooltip-text,
+        .tooltip-text .pln,
+        .tooltip-text .str,
+        .tooltip-text .lit,
+        .tooltip-text .typ,
+        .tooltip-text .kwd,
+        .tooltip-text .pun {
+            color: #fdd7bb;
+            min-width: 60%;
+        }
+    </style>
+</body>
 
 </html>

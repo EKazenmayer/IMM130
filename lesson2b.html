@@ -10,7 +10,7 @@
 
 <body onload="loadLesson2b()">
     <header>
-        <img class="logo" src="imgs/Logo.svg" alt="Java Crash Course">
+        <a href="index.html"><img class="logo" src="imgs/Logo.svg" alt="Java Crash Course"></a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -36,34 +36,48 @@
                 <h2>2</h2>
             </div>
         </div>
-        <pre class="prettyprint lang-java" id="lesson2code">
-boolean drinksCoffee = true;
-int numPackets = 2;
-String typeOfDrink;
-if (drinksCoffee == true) {
-    typeOfDrink = "coffee";
-}
-else {
-    typeOfDrink = "tea";
-}
-System.out.print("Barista Ada made you a special drink! ");
-System.out.println("She made you " + typeOfDrink + " with " + numPackets + " packets of sugar.");
-
-if (numPackets == 0) {
-    System.out.println("It's really bitter!");
-}
-else if (numPackets == 1 || numPackets == 2) {
-    System.out.println("Just right!");
-}
-else if (numPackets >= 3) {
-    System.out.println("How sweet!");
-}
+        <pre class="prettyprint lang-java">
+        <div class="tooltip">boolean drinksCoffee = <span id="lesson2code0">true</span>;<span class="tooltip-text">A boolean variable is something that is either true or false</span></div>
+        <div class="tooltip">int numPackets = <span id="lesson2code1">2</span>;<span class="tooltip-text">Variables can be named almost anything not including spaces or crazy characters and not already being used by Java itself</span></div>
+        <div class="tooltip">String typeOfDrink;<span class="tooltip-text">We can set up a variable to be set to a value later</span></div>
+        <div class="tooltip">if (drinksCoffee == true) {<br>   typeOfDrink = "coffee";<br>}<span class="tooltip-text">If the left and right side of == are equal, then the code inside the {} runs</span></div>
+        <div class="tooltip">else {<br>   typeOfDrink = "tea";<br>}<span class="tooltip-text">This specifies what to do otherwise</span></div>
+        <div class="prettyprint lang-java">System.out.println("Barista Ada made you a special drink!");</div>
+        <div class="tooltip">System.out.println("She made you " + typeOfDrink + " with " + numPackets + " packets of sugar.");<span class="tooltip-text">Stringing together a message like this is called String concatenation</span></div>
+        <div class="tooltip">if (numPackets == 0 || numPackets == 1) {<br>   System.out.println("It's really bitter!");<br>}<span class="tooltip-text">|| means "or", &amp;&amp; means "and"</span></div>
+        <div class="tooltip">else if (numPackets == 2) {<br>   System.out.println("Just right!");<br>}<span class="tooltip-text">If the first condition is false, you can specify another one to check</span></div>
+        <div class="tooltip">else {<br>   System.out.println("How sweet!");<br>}<span class="tooltip-text">If all if's and else if's fail, run the code inside here</span></div>
         </pre>
         <button id="lesson2bButton" onclick="window.location.href='lesson3.html'">Next Lesson!</button>
     </main>
-</body>
+    <script src="scripts/main.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <style>
+        .pln {
+            color: #28180e;
+        }
 
-<script src="scripts/main.js"></script>
-<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        .str,
+        .lit {
+            color: #8c4a2b
+        }
+
+        .typ,
+        .kwd {
+            color: #dc2a26;
+        }
+
+        .tooltip-text,
+        .tooltip-text .pln,
+        .tooltip-text .str,
+        .tooltip-text .lit,
+        .tooltip-text .typ,
+        .tooltip-text .kwd,
+        .tooltip-text .pun {
+            color: #fdd7bb;
+            min-width: 60%;
+        }
+    </style>
+</body>
 
 </html>

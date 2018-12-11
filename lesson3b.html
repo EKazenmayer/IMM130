@@ -10,7 +10,7 @@
 
 <body onload="loadLesson3b()">
     <header>
-        <img class="logo" src="imgs/Logo.svg" alt="Java Crash Course">
+        <a href="index.html"><img class="logo" src="imgs/Logo.svg" alt="Java Crash Course"></a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -37,26 +37,45 @@
                 <h2>3</h2>
             </div>
         </div>
-        <pre class="prettyprint lang-java" id="lesson3code">
-String[] customers = {
-    "Grace Hopper",
-    "Alan Turing",
-    "Steve Wozniak",
-    "Anita Borg",
-    "Jessica Matthews"
-};
+        <pre class="prettyprint lang-java">
+        <div id="tooltip">String[] customers = {<br>   "<span id="lesson3code0">Grace Hopper</span>",<br>   "<span id="lesson4code1">Alan Turing</span>",<br>   "<span id="lesson4code2">Steve Wozniak</span>",<br>   "<span id="lesson4code3">Anita Borg</span>",<br>   "<span id="lesson4code4">Jessica Matthews</span>"<br>}<span class="tooltip-text">This creates an array of customers' names</span></div>
 System.out.println("Barista Bill has orders for you to fill!");
-System.out.println("First, please take an order for " + customers[0] + 
-    ". Next, serve " + customers[1] + ", then get to " + customers[2] + 
+        <div id="tooltip">System.out.println("First, please take an order for " + customers[0] +<span class="tooltip-text">Unlike how page numbers of a book starts at 1, indexes of an array start at 0</span></div>
+        <div id="tooltip">   ". Next, serve " + customers[1] + ", then get to " + customers[2] +<span class="tooltip-text">The array name followed by the [index number] serves as the "variable name" for each name in your list</span></div>
     ", followed by " + customers[3] +
-    ". Finally, please finish the order for " + customers[4] + 
+    <div id="tooltip">   ". Finally, please finish the order for " + customers[4] +<span class="tooltip-text">The last possible index of an array is equal to the number of elements it has, minus one</span></div>
     ". Good luck! You're doing great!");
         </pre>
         <button id="lesson3bButton" onclick="window.location.href='lesson4.html'">Next Lesson!</button>
     </main>
-</body>
+    <script src="scripts/main.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <style>
+        .pln {
+            color: #28180e;
+        }
 
-<script src="scripts/main.js"></script>
-<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        .str,
+        .lit {
+            color: #8c4a2b
+        }
+
+        .typ,
+        .kwd {
+            color: #dc2a26;
+        }
+
+        .tooltip-text,
+        .tooltip-text .pln,
+        .tooltip-text .str,
+        .tooltip-text .lit,
+        .tooltip-text .typ,
+        .tooltip-text .kwd,
+        .tooltip-text .pun {
+            color: #fdd7bb;
+            min-width: 60%;
+        }
+    </style>
+</body>
 
 </html>

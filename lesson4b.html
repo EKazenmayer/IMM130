@@ -10,7 +10,7 @@
 
 <body onload="loadLesson4b()">
     <header>
-        <img class="logo" src="imgs/Logo.svg" alt="Java Crash Course">
+        <a href="index.html"><img class="logo" src="imgs/Logo.svg" alt="Java Crash Course"></a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -37,22 +37,47 @@
                 <h2>4</h2>
             </div>
         </div>
-        <pre class="prettyprint lang-java" id="lesson4code">
-int amountMoreCups = 3;
-int numberOfCustomers = customers.size();
-int numberOfCups = 2;
-int customerServed = 1;
-while(customersServed &lt; numberOfCustomers + 1) {
-    System.out.println("Customer #" + customerServed + " ordered " + numberOfCups + " cups of coffee.");
-    numberOfCups = numberOfCups + amountMoreCups;
-    customerServed = customerServed + 1;
-}
+        <pre class="prettyprint lang-java">
+        <div class="tooltip">int amountMoreCups = <span id=lesson4code0>3</span>;<span class="tooltip-text">This will be the number of cups more that the current customer gets compared to the last customer served</span></div>
+        <div class="tooltip">int numberOfCustomers = customers.size();<span class="tooltip-text">The number of customers to serve is equal to the number of names in the array of customers</span></div>
+        <div class="tooltip">int numberOfCups = 2;<span class="tooltip-text">A variable to represent the total number of cups the current customer orders</span></div>
+        <div class="tooltip">int customersServed = 1;<span class="tooltip-text">Keep track of the number of customers served</span></div>
+        <div class="tooltip">while(customersServed &lt; numberOfCustomers + 1) {<span class="tooltip-text">The code inside the {} runs while the number of customers served does not exceed the total number of customers there are</span></div>
+        <div class="tooltip">   System.out.println("Customer #" + customerServed + " ordered " + numberOfCups + " cups of coffee.");<span class="tooltip-text">For each customer, print out their number and how much coffee they ordered</span></div>
+        <div class="tooltip">   numberOfCups = numberOfCups + amountMoreCups;<span class="tooltip-text">Update the amount of coffee that the next person would order based on the current customer's order</span></div>
+        <div class="tooltip">   customerServed = customerServed + 1;<span class="tooltip-text">Update the number of the next customer to serve, like taking a number in line in real life</span></div>
+        <div class="prettyprint lang-java">}</div>
         </pre>
         <button id="lesson4bButton" onclick="window.location.href='finale.html'">Next</button>
     </main>
-</body>
+    <script src="scripts/main.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <style>
+        .pln {
+            color: #28180e;
+        }
 
-<script src="scripts/main.js"></script>
-<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        .str,
+        .lit {
+            color: #8c4a2b
+        }
+
+        .typ,
+        .kwd {
+            color: #dc2a26;
+        }
+
+        .tooltip-text,
+        .tooltip-text .pln,
+        .tooltip-text .str,
+        .tooltip-text .lit,
+        .tooltip-text .typ,
+        .tooltip-text .kwd,
+        .tooltip-text .pun {
+            color: #fdd7bb;
+            min-width: 60%;
+        }
+    </style>
+</body>
 
 </html>
