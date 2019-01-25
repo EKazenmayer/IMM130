@@ -102,7 +102,7 @@ function loadLesson2b() {
     let numPackets = cookies.get("numPackets");
     if (drinksCoffee != null && numPackets != null) {
         document.getElementById("lesson2code0").innerHTML = drinksCoffee;
-        document.getElementById("lesson2code0").innerHTML = numPackets;
+        document.getElementById("lesson2code1").innerHTML = numPackets;
         //            "String typeOfDrink;\nif (drinksCoffee == true) {\n" +
         //            "    typeOfDrink = \"coffee\";\n" +
         //            "}\n" +
